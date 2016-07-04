@@ -39,17 +39,17 @@ impl Spritz {
 
 	fn initialize_state() -> Spritz {
 		let mut sp = Spritz {
-            S: [0; 256],
-            i: 0,
-            j: 0,
-            k: 0,
-            z: 0,
-            a: 0,
-            w: 1,
-        };
-        for (i, v) in sp.S.iter_mut().enumerate() {
-            *v = i as u8;
-        };
+    		S: [0; 256],
+			i: 0,
+			j: 0,
+			k: 0,
+			z: 0,
+			a: 0,
+			w: 1,
+		};
+		for (i, v) in sp.S.iter_mut().enumerate() {
+			*v = i as u8;
+		};
 		sp
 	}
 
